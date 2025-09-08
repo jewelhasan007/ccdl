@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { FaRegEdit } from 'react-icons/fa';
 import { RiDeleteBin5Line } from 'react-icons/ri';
+import Swal from 'sweetalert2';
 
 const Today = () => {
 
@@ -18,6 +19,42 @@ const loadTodayTask =async () =>{
 
     },[])
 console.log(todayTask)
+const handleDelete = async (id) =>{
+  console.log(id)
+
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then( async(result) => {
+    if (result.isConfirmed) {
+      const deleteData =await  fetch (`${process.env.NEXT_PUBLIC_BASE_URL}/add-task/${id}`,{
+        method: "DELETE",
+          });
+          const resp = await  deleteData.json();
+          console.log(resp)
+
+          if(resp?.response?.deletedCount > 0){
+            loadSections();
+            Swal.fire({
+              title: "Deleted!",
+              text: "Your file has been deleted.",
+              icon: "success"
+            });
+            // toast.success("Deleted Succesfully");
+          }
+
+    
+    }
+  });
+
+
+ 
+}
 
     return (
         <div>
