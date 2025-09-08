@@ -39,7 +39,7 @@ const handleDelete = async (id) =>{
           console.log(resp)
 
           if(resp?.response?.deletedCount > 0){
-            loadSections();
+            loadTodayTask();
             Swal.fire({
               title: "Deleted!",
               text: "Your file has been deleted.",
