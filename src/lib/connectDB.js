@@ -20,7 +20,7 @@ try{
     return db
 }
 catch(error){
-
+console.log("the error is", error)
 }
 }
 
