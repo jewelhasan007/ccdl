@@ -16,7 +16,7 @@ try{
         }
     });
     // db = client.db('car-doctor-pro')
-    db = client.db('ccdl-vrm-ee')
+    db = client.db('ccdl')
     return db
 }
 catch(error){
