@@ -55,8 +55,7 @@ const handleDelete = async (id) =>{
               text: "Your file has been deleted.",
               icon: "success"
             });
-                 Section();
-            Today()
+          
             // toast.success("Deleted Succesfully");
           }
 
