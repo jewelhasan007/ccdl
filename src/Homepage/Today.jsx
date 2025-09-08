@@ -40,6 +40,7 @@ const handleDelete = async (id) =>{
 
           if(resp?.response?.deletedCount > 0){
             loadTodayTask();
+            Today();
             Swal.fire({
               title: "Deleted!",
               text: "Your file has been deleted.",
