@@ -4,13 +4,27 @@ import React, { useEffect, useState } from 'react';
 import { FaRegEdit } from 'react-icons/fa';
 import { RiDeleteBin5Line } from 'react-icons/ri';
 import Swal from 'sweetalert2';
+import { getAddTaskDB } from './getAddTask';
+import Section from './Section';
 
-const Today = () => {
+const Today = ({refresh}) => {
+const [allTask, setAllTask] = useState([])
+
+const loadSections = async () =>{
+  // const sections = await getSectionsDB();
+  const tasks = await getAddTaskDB()
+  // setAllSections(sections.services)
+  setAllTask(tasks.res)
+}
+useEffect(()=>{
+  loadSections()  
+},[])
 
     const [todayTask, setTodayTask] = useState([])
 const loadTodayTask =async () =>{
   const resp =await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/today/api`)
        const result = await resp.json();
+       console.log("today list page", result)
        setTodayTask(result.results)
 }
     useEffect(()=>{
@@ -39,7 +53,9 @@ const handleDelete = async (id) =>{
           console.log(resp)
 
           if(resp?.response?.deletedCount > 0){
-            loadTodayTask();
+            // loadTodayTask();
+            loadSections();
+            
             Swal.fire({
               title: "Deleted!",
               text: "Your file has been deleted.",

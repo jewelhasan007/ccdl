@@ -4,9 +4,6 @@ import Section from './Section';
 import { useSession } from 'next-auth/react';
 import Image from 'next/image';
 
-
-
-
 const Homepage = () => {
   const session = useSession();
     const handleToDo = async (event) => {

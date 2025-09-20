@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
+import { getAllTask } from "@/Homepage/getAllTask";
 
 const FormModal = () => {
   const router = useRouter();
@@ -22,6 +23,13 @@ const FormModal = () => {
       [name]: value,
     });
   };
+const handleRefresh = ()  =>{
+loadAll
+}
+useEffect(()=>{
+  
+},[])
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();

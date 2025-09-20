@@ -11,6 +11,7 @@ import Done from './Done';
 import Today from './Today';
 import { toast } from 'react-toastify';
 import Swal from 'sweetalert2';
+import Priority from './Priority';
 
 const Section =  () => {
 // const [allSections, setAllSections] = useState([])
@@ -26,6 +27,7 @@ const loadSections = async () =>{
 useEffect(()=>{
   loadSections()  
 },[])
+
 console.log(allTask)
  
 const handleDelete = async (id) =>{
@@ -49,7 +51,7 @@ const handleDelete = async (id) =>{
 
           if(resp?.response?.deletedCount > 0){
             loadSections();
-       
+        
             Swal.fire({
               title: "Deleted!",
               text: "Your file has been deleted.",
@@ -67,13 +69,17 @@ const handleDelete = async (id) =>{
  
 }
     return (
-       <div className='' >
+       <div className=' text-black flex justify-between ' >
 
-      <div className='mt-3 '>
+      <div className='mt-3 w-full '>
         {/* name of each tab group should be unique */}
-<div className="tabs tabs-box ">
+<div className="tabs tabs-box">
+  
+  <input type="radio" name="my_tabs_6" className="tab" aria-label="Pending Issues"  defaultChecked/>
+  <div className="tab-content bg-base-100 border-base-300 p-6"><Priority></Priority></div>
+
   <input type="radio" name="my_tabs_6" className="tab" aria-label="All task"  />
-  <div className="tab-content bg-base-100 border-base-300 p-6  ">
+  <div className="tab-content border-base-300 p-6  ">
    
   <div className="overflow-x-auto mt-4 max-h-screen   ">
     <table className="table table-xs  ">
@@ -122,7 +128,9 @@ const handleDelete = async (id) =>{
   <div className="tab-content bg-base-100 border-base-300 p-6"><Done></Done></div>
 
   <input type="radio" name="my_tabs_6" className="tab" aria-label="Today List"  defaultChecked/>
-  <div className="tab-content bg-base-100 border-base-300 p-6"><Today></Today></div>
+  <div className="tab-content bg-base-100 border-base-300 p-6"><Today refresh={loadSections}></Today></div>
+  <input type="radio" name="my_tabs_6" className="tab" aria-label="Today List"  defaultChecked/>
+  <div className="tab-content bg-base-100 border-base-300 p-6"><Today refresh={loadSections}></Today></div>
 </div>
       </div>
 
