@@ -16,6 +16,97 @@
         "requirement":"",
 "mode" : "without materials",
 "remarks" : "Mr. Chengrong",
+"site_visit" : "Done"
+ },
+ {
+"engr": " ABB VFD Engineer",
+        "date" : "08.09.2025",
+	"duration" : "10 days",
+        "requirement":"Voltage regulator",
+"mode" : "without materials",
+"remarks" : "Mr. Gu jibing",
+"site_visit" : "Done"
+ },
+ {
+"engr": " Electrical Engineer(CHMC)China tour",
+        "date" : "11.09.2025",
+	"duration" : "15 days",
+        "requirement":"visa issues",
+"mode" : "without materials",
+"remarks" : "Mr. Xin",
+"site_visit" : "Ongoing"
+ },
+ {
+"engr": " DCS Engr (CHMC) china tour",
+        "date" : "01.10.2025",
+	"duration" : "07 days",
+        "requirement":"visa issue",
+"mode" : "without materials",
+"remarks" : "Mr. Chengoang",
+"site_visit" : "Ongoing"
+ },
+ 
+ {
+"engr": " LOESCHE Cold Commissioning Engineer",
+        "date" : "29.09.2025",
+	"duration" : "45 days",
+        "requirement":"VRM work",
+"mode" : "without materials",
+"remarks" : "Mr. Alexender",
+"site_visit" : "Ongoing"
+ },
+ {
+"engr": " Reclaimer Engineer",
+        "date" : "07.10.2025",
+	"duration" : "10 days",
+        "requirement":"Reclaimer readiness",
+"mode" : "without materials",
+"remarks" : "CHMC",
+"site_visit" : "Pending"
+ },
+  {
+"engr": " Rotary weighfeeder for coal",
+        "date" : "25.10.2025",
+	"duration" : "15 days",
+        "requirement":"Raw coal",
+"mode" : "with materials",
+"remarks" : "CHMC",
+"site_visit" : "Pending"
+ },
+ {
+"engr": " Electrical Engineer for Packer(H&B)",
+        "date" : "05.11.2025",
+	"duration" : "30 days",
+        "requirement":"Cement",
+"mode" : "with materials",
+"remarks" : "HAVER",
+"site_visit" : "Pending"
+ },
+ {
+"engr": " Cement SILO gate, TLM, & Jumbo bag Engineer",
+        "date" : "05.11.2025",
+	"duration" : "25 days",
+        "requirement":"Cement",
+"mode" : "with materials",
+"remarks" : "CHMC",
+"site_visit" : "Pending"
+ },
+ {
+"engr": " HGG Commissioning Engineer",
+        "date" : "07.11.2025",
+	"duration" : "21 days",
+        "requirement":"Raw coal/ Diesel",
+"mode" : "with materials",
+"remarks" : "CHMC",
+"site_visit" : "Pending"
+ },
+ {
+"engr": " LOESCHE Hot Commissioning Engineer",
+        "date" : "15.11.2025",
+	"duration" : "45 days",
+        "requirement":"Raw materials",
+"mode" : "with materials",
+"remarks" : "LOESCHE",
 "site_visit" : "Pending"
  }
   ]

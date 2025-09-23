@@ -36,8 +36,12 @@ console.log(engr)
   <TableBody>
    {
     engr.map((engr, index)=>( <TableRow key={index}>
-      <TableCell className="font-medium">{index}</TableCell>
-      <TableCell>{engr.engr}</TableCell>
+      <TableCell className="font-medium">{index+1}</TableCell>
+      <TableCell className={`${engr.site_visit === 'Done' ? ' text-green-800 font-bold' :
+        engr.site_visit === 'Pending' ? ' text-red-800 font-bold' : 
+        engr.site_visit === 'Ongoing' ? ' text-blue-800 font-bold' : 
+        'bg-white-100 text-black'
+      }`}>{engr.engr}</TableCell>
       <TableCell>{engr.date}</TableCell>
       <TableCell className="text-right">{engr.duration}</TableCell>
       <TableCell className="font-medium">{engr.requirement}</TableCell>
