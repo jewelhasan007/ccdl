@@ -1,0 +1,13 @@
+{ "com_schedule" : [
+    {
+        "equipment": " ABB MV VFD(ID Fan)",
+        "start_date" : "08.09.2025",
+	"finished_date" : "16.09.2025",
+        "engr_name":"Mr. Gu Jibing",
+        "email" : "gujibing2000@163.com",
+        "vendor" : "Mr.Xin",
+        "status" : "Done"
+     }
+  ]
+}
+  

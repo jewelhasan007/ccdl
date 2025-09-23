@@ -13,6 +13,7 @@ import { toast } from 'react-toastify';
 import Swal from 'sweetalert2';
 import Priority from './Priority';
 import ChineseEngr from './ChineseEngr';
+import CommissioningSchedule from './CommissioningSchedule';
 
 const Section =  () => {
 // const [allSections, setAllSections] = useState([])
@@ -78,6 +79,8 @@ const handleDelete = async (id) =>{
   
   <input type="radio" name="my_tabs_6" className="tab" aria-label="Chinese Engr"  defaultChecked/>
   <div className="tab-content bg-base-100 border-base-300 p-6"><ChineseEngr></ChineseEngr></div>
+  <input type="radio" name="my_tabs_6" className="tab" aria-label="Chinese Engr"  defaultChecked/>
+  <div className="tab-content bg-base-100 border-base-300 p-6"><CommissioningSchedule></CommissioningSchedule></div>
   <input type="radio" name="my_tabs_6" className="tab" aria-label="Pending Issues"  defaultChecked/>
   <div className="tab-content bg-base-100 border-base-300 p-6"><Priority></Priority></div>
 
