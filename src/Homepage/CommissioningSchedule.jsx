@@ -16,7 +16,7 @@ const CommissioningSchedule = () => {
 
     return (
          <div>
-            <h5 className='text-2xl mb-3 underline'>Commissioning Engineers Dispatch Schedule, tour & Status:</h5>
+            <h5 className='text-2xl mb-3 underline'>Commissioning schedule:</h5>
             <div>
                 <Table>
   <TableCaption>A list of your recent invoices.</TableCaption>
@@ -24,8 +24,8 @@ const CommissioningSchedule = () => {
     <TableRow>
       <TableHead className="w-[100px]">Sl No</TableHead>
       <TableHead>Equipment Name</TableHead>
-      <TableHead>Commissioning Start Date</TableHead>
-      <TableHead >Finishing Date</TableHead>
+      <TableHead>Start Date</TableHead>
+      <TableHead>Finishing Date</TableHead>
       <TableHead>Engr's Name</TableHead>
       <TableHead>Email</TableHead>
       <TableHead>Vendor</TableHead>
