@@ -1,0 +1,23 @@
+{ "chinese_engr" : [
+ 
+    {
+        "engr": " Electrical Engineer(CHMC)",
+        "date" : "05.03.2025",
+	"duration" : "180 days",
+        "requirement":"",
+"mode" : "without materials",
+"remarks" : "Mr.Xin",
+"site_visit" : "Done"
+     },
+ {
+"engr": " DCS Engineer(CHMC)",
+        "date" : "27.07.2025",
+	"duration" : "180 days",
+        "requirement":"",
+"mode" : "without materials",
+"remarks" : "Mr. Chengrong",
+"site_visit" : "Pending"
+ }
+  ]
+}
+  
