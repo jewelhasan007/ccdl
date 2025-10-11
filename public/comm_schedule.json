@@ -7,6 +7,24 @@
         "email" : "gujibing2000@163.com",
         "vendor" : "Mr.Xin",
         "status" : "Done"
+     },
+    {
+        "equipment": " Schenck Process Engr",
+        "start_date" : "25.09.2025",
+	"finished_date" : "25.10.2025",
+        "engr_name":"Mr. SONG ZHIFENG",
+        "email" : "song.zhifeng@schenckprocess.com",
+        "vendor" : "Schenck Process (China)",
+        "status" : "Ongoing"
+     },
+    {
+        "equipment": "Loesche Cold Comm",
+        "start_date" : "29.09.2025",
+	"finished_date" : "15.11.2025",
+        "engr_name":"Mr. Alexander Stroettchen",
+        "email" : "alexender@loesche.com",
+        "vendor" : "LOESCHE",
+        "status" : "Ongoing"
      }
   ]
 }
