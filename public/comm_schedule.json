@@ -15,7 +15,7 @@
         "engr_name":"Mr. SONG ZHIFENG",
         "email" : "song.zhifeng@schenckprocess.com",
         "vendor" : "Schenck Process (China)",
-        "status" : "Ongoing"
+        "status" : "Done"
      },
     {
         "equipment": "Loesche Cold Comm",
@@ -24,6 +24,24 @@
         "engr_name":"Mr. Alexander Stroettchen",
         "email" : "alexender@loesche.com",
         "vendor" : "LOESCHE",
+        "status" : "Ongoing"
+     },
+     {
+        "equipment": "Reclaimer Engineer",
+        "start_date" : "27.10.2025",
+	"finished_date" : "01.11.2025",
+        "engr_name":"Mr. Wang Mingtao",
+        "email" : "wang@reclaimer.com",
+        "vendor" : "Reclaimer",
+        "status" : "Done"
+     },
+     {
+        "equipment": "Rotary weighfeeder for coal",
+        "start_date" : "07.11.2025",
+	"finished_date" : "01.11.2025",
+        "engr_name":"Mr. Tu Lirui",
+        "email" : "tulirui@rotary.com",
+        "vendor" : "Reclaimer",
         "status" : "Ongoing"
      }
   ]

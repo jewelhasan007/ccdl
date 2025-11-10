@@ -33,7 +33,7 @@
         "requirement":"visa issues",
         "mode" : "without materials",
         "remarks" : "Mr. Xin",
-        "site_visit" : "Ongoing"
+        "site_visit" : "Done"
  },
  {
         "engr": " DCS Engr (CHMC) china tour",
@@ -42,7 +42,7 @@
         "requirement":"visa issue",
         "mode" : "without materials",
         "remarks" : "Mr. Chengoang",
-        "site_visit" : "Ongoing"
+        "site_visit" : "Done"
  },
  
  {
@@ -61,7 +61,7 @@
         "requirement":"Reclaimer readiness",
         "mode" : "without materials",
         "remarks" : "CHMC",
-        "site_visit" : "Pending"
+        "site_visit" : "Done"
  },
   {
         "engr": " Rotary weighfeeder for coal",
@@ -70,11 +70,11 @@
         "requirement":"Raw coal",
         "mode" : "with materials",
         "remarks" : "CHMC",
-        "site_visit" : "Pending"
+        "site_visit" : "Ongoing"
  },
  {
         "engr": " Electrical Engineer for Packer(H&B)",
-        "date" : "05.11.2025",
+        "date" : "20.11.2025",
 	    "duration" : "30 days",
         "requirement":"Cement",
         "mode" : "with materials",
@@ -83,7 +83,7 @@
  },
  {
         "engr": " Cement SILO gate, TLM, & Jumbo bag Engineer",
-        "date" : "05.11.2025",
+        "date" : "25.11.2025",
 	    "duration" : "25 days",
         "requirement":"Cement",
         "mode" : "with materials",
@@ -92,7 +92,7 @@
  },
  {
         "engr": " HGG Commissioning Engineer",
-        "date" : "07.11.2025",
+        "date" : "15.11.2025",
 	    "duration" : "21 days",
         "requirement":"Raw coal/ Diesel",
         "mode" : "with materials",
