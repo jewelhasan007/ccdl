@@ -25,15 +25,16 @@ const Priority = () => {
 
     return (
         <div>
-       <div className='flex justify-between'>
-             <h1>Priority Issues</h1>
+       <div className='flex justify-between m-1'>
+           <h5 className='text-2xl'>Priority Issues</h5>
          <PriorityFormModal></PriorityFormModal>
        </div>
+       <hr />
         <div className="overflow-x-auto mt-4 max-h-screen   ">
    
          {allPriorityTask.map((priority, index) => (
 
-<ul key={index} className="list bg-base-100 rounded-box shadow-md m-2 p-3"> 
+<ul key={index} className="list bg-base-100 rounded-box shadow-md m-1 p-1"> 
   <li className="list-row">
     <div className="text-4xl font-thin opacity-30 tabular-nums">{index+1}</div>
     <div><img className="size-10 rounded-box" src="./cement-logo.png"/></div>
