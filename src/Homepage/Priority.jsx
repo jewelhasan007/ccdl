@@ -36,7 +36,7 @@ const Priority = () => {
 <ul key={index} className="list bg-base-100 rounded-box shadow-md"> 
   <li className="list-row">
     <div className="text-4xl font-thin opacity-30 tabular-nums">{index+1}</div>
-    <div><img className="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/1@94.webp"/></div>
+    <div><img className="size-10 rounded-box" src="./cement-logo.png"/></div>
     <div className="list-col-grow">
       <div>{priority.name}</div>
       <div className="text-xs uppercase font-semibold opacity-60">{priority.description}</div>
