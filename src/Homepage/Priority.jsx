@@ -33,7 +33,7 @@ const Priority = () => {
    
          {allPriorityTask.map((priority, index) => (
 
-<ul key={index} className="list bg-base-100 rounded-box shadow-md"> 
+<ul key={index} className="list bg-base-100 rounded-box shadow-md m-2 p-3"> 
   <li className="list-row">
     <div className="text-4xl font-thin opacity-30 tabular-nums">{index+1}</div>
     <div><img className="size-10 rounded-box" src="./cement-logo.png"/></div>
@@ -42,11 +42,14 @@ const Priority = () => {
       <div className="text-xs uppercase font-semibold opacity-60">{priority.description}</div>
       <div className="text-md font-semibold opacity-60">{priority.date}</div>
     </div>
-    <button className="btn btn-square btn-ghost">
-      <svg className="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor"><path d="M6 3L20 12 6 21 6 3z"></path></g></svg>
-    </button>
+<div className='text-gray-400 tooltip' data-tip="Edit"><Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/priority-task/${priority._id}`}><FaRegEdit /></Link></div>
+  <div className='text-red-400 tooltip' data-tip="Delete"><Link href="#" onClick={ (e) => {e.preventDefault(); handleDelete(priority._id)}}><RiDeleteBin5Line /></Link></div>
+
   </li>
- 
+
+    
+    
+
 </ul>
 
         ))}
