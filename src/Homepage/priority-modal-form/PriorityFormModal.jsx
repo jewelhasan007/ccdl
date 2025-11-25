@@ -64,7 +64,7 @@ useEffect(()=>{
 
   return (
     <div>
-      <button className="btn btn-sm btn-outline btn-primary mr-3" onClick={openModal}>
+      <button className="btn btn-sm btn-outline btn-primary mr-3 animate-pulse text-blue-600" onClick={openModal}>
         Add Task
       </button>
 <div>

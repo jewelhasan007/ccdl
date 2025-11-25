@@ -31,7 +31,7 @@ const Homepage = () => {
     return (
         <div className=' flex h-full mx-auto items-top justify-center ' >
         
-        {  session?.status === "authenticated" ?
+        { session?.status === "authenticated" ?
         <Section ></Section> : <Image src='/bg-home.png' width={300} height={300} alt='image'></Image> }
         
         </div>
