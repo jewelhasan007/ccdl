@@ -77,7 +77,7 @@ const handleDelete = async (id) =>{
         {/* name of each tab group should be unique */}
 <div className="tabs tabs-box ">
    <input type="radio" name="my_tabs_6" className="tab " aria-label="Immediate Issues"  defaultChecked/>
-  <div className="tab-content bg-base-100 border-base-300 p-6"><Priority></Priority></div>
+  <div className="tab-content bg-base-100 border-base-300 p-6"><Priority refresh={loadSections}></Priority></div>
    <input type="radio" name="my_tabs_6" className="tab" aria-label="Chinese Engr"  defaultChecked/>
   <div className="tab-content bg-base-100 border-base-300 p-6"><ChineseEngr></ChineseEngr></div>
   <input type="radio" name="my_tabs_6" className="tab" aria-label="Chinese Engr"  defaultChecked/>
@@ -126,16 +126,15 @@ const handleDelete = async (id) =>{
     
   </div>
 
-  <input type="radio" name="my_tabs_6" className="tab" aria-label="Pending"  />
+  <input type="radio" name="my_tabs_6" className="tab" aria-label="Pending"  defaultChecked/>
   <div className="tab-content bg-base-100 border-base-300 p-6"><Pending></Pending></div>
 
-  <input type="radio" name="my_tabs_6" className="tab" aria-label="Done" />
+  <input type="radio" name="my_tabs_6" className="tab" aria-label="Done" defaultChecked/>
   <div className="tab-content bg-base-100 border-base-300 p-6"><Done></Done></div>
 
   <input type="radio" name="my_tabs_6" className="tab" aria-label="Today List"  defaultChecked/>
-  <div className="tab-content bg-base-100 border-base-300 p-6"><Today refresh={loadSections}></Today></div>
-  <input type="radio" name="my_tabs_6" className="tab" aria-label="Today List"  defaultChecked/>
-  <div className="tab-content bg-base-100 border-base-300 p-6"><Today refresh={loadSections}></Today></div>
+  <div className="tab-content bg-base-100 border-base-300 p-6"><Today ></Today></div>
+
 </div>
       </div>
 
