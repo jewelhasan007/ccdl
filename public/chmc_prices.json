@@ -1,0 +1,28 @@
+{ "prices" : [
+    {
+    "title" :"Haver & Boecker Cable",
+    "description" : "missing items",
+    "delivery_date" : "27.11.2025",
+    "delivery_method":"chmc",
+    "received_date" : "27.11.2025",
+    "unit_price" : 225,
+    "quantity":"2 nos",
+    "total_price" : 450,
+    "currency" : "USD"
+    },
+    {
+    "title" :"ID Fan cooling fan",
+    "description" : "malfunctioning",
+    "delivery_date" : "17.11.2025",
+    "delivery_method":"chmc_air",
+    "received_date" : "02.12.2025",
+    "unit_price" : 1500,
+    "quantity":"2 nos",
+    "total_price" : 3000,
+    "currency" : "USD"
+    }
+
+  ]
+}
+  
+
