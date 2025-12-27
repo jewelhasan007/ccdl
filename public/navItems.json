@@ -61,6 +61,11 @@
   "title": "Miscellaneous",
   "path" : "/miscellaneous",
   "section":"miscellaneous"
+ },
+ {
+  "title": "Power Consumption(KWh/t)",
+  "path" : "/consumption",
+  "section":"consumption"
  }
   ]
 }

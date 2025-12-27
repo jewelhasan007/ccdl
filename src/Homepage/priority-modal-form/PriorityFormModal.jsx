@@ -24,9 +24,7 @@ const PriorityFormModal = () => {
 const handleRefresh = ()  =>{
 loadAll
 }
-useEffect(()=>{
-  
-},[])
+
 
 
   const handleSubmit = async (e) => {

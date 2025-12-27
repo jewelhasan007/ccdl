@@ -7,7 +7,7 @@ try {
     const todayTask = await taskCollections.find({}, {projection: {date: 1}}).toArray();
     res.status(200).json(todayTask)
 } catch (error) {
-    console.log(error)
-    res.status(500).json({error: "something wen wrong"})
+ 
+    res.status(500).json({error: "something went wrong"})
 }
 }

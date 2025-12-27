@@ -9,7 +9,7 @@ export const GET = async (request, {params}) =>{
     const sectionCollections = db.collection('add-task')
     try {
         const sectionFound = await params;
-        console.log(sectionFound)
+     
        const sectionList = await  sectionCollections.find({section: sectionFound.section}).toArray();
        return NextResponse.json({sectionList})
     } catch (error) {

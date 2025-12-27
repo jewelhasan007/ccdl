@@ -138,6 +138,7 @@ const handleDelete = async (id) =>{
   <input type="radio" name="my_tabs_6" className="tab" aria-label="Today List"  defaultChecked/>
   <div className="tab-content bg-base-100 border-base-300 p-6"><Today ></Today></div>
 
+
 </div>
       </div>
 
