@@ -9,7 +9,7 @@ import FormModal from "./modal-form/FormModal";
 import Profile from "./Profile";
 import { useSession } from "next-auth/react";
 import NavbarUser from "./NavbarUser";
-import PowerConsumption from "@/Homepage/PowerConsumption";
+
 
 const Navbar = () => {
   // const session = useSession();
@@ -109,7 +109,7 @@ useEffect(()=>{
            
           </ul>
         </div>
-       <button className="btn btn-sm btn-outline btn-primary"> <Link href="/">CCDL VRM EE</Link></button>
+       <button className="btn  text-white bg-[url('/cement-logo.png')] bg-cover bg-center"> <Link href="/"></Link></button>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu-sm menu-horizontal px-1 ">
@@ -123,7 +123,7 @@ useEffect(()=>{
                 textDecoration:
                   pathname === `${item.path}` ? "underline" : "none",
               }}
-              className="font-bold m-3 hover:text-primary"
+              className="font-bold mt-2 hover:text-primary"
               href={item.path}
               key={item.path}
             >
