@@ -60,7 +60,7 @@ const page = () => {
     <tbody>
       {/* row 1 */}
      {allPower.map((power, index)=>(
-       <tr className='text-center border-b-1'>
+       <tr className='text-center border-b-1' key={index}>
        <th>{power.date}</th>
         <th className='text-gray-500'>{power.loesche}</th>
         <th className='text-gray-500'>{power.grinding}</th>
