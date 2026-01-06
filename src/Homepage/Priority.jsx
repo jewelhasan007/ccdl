@@ -12,11 +12,20 @@ const Priority = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [testHovered, setTestHovered] = useState(null);
 
-  const loadSections = async () => {
-    const tasks = await getAllPriorityTaskDB();
-    setAllPriorityTask(tasks.res);
-  };
+  // const loadSections = async () => {
+  //   const tasks = await getAllPriorityTaskDB();
+  //   setAllPriorityTask(tasks.res);
+  // };
 
+  const loadSections = async () => {
+  try {
+    const tasks = await getAllPriorityTaskDB();
+    setAllPriorityTask(tasks?.res ?? []);
+  } catch (error) {
+    console.error("Failed to load priority tasks:", error);
+    setAllPriorityTask([]);
+  }
+};
   useEffect(() => {
     loadSections();
   }, []);

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -21,19 +21,40 @@ const Navbar = () => {
   const [modalClose, setModalClose] = useState(false);
   const [allSections, setAllSections] = useState([]);
 useEffect(()=>{
-  if(status === "unauthenticated" & pathname !== "/login"){router.push("/login")}
+  if(status === "unauthenticated" && pathname !== "/login"){router.push("/login")}
 },[status, pathname, router])
-useEffect(()=>{
-  if(status === "authenticated" & session?.user?.type === "User" & pathname !== "/consumption"){router.push("/consumption")}
-},[status, pathname, router])
+useEffect(() => {
+  if (
+    status === "authenticated" &&
+    session?.user?.type === "User" &&
+    pathname !== "/consumption"
+  ) {
+    router.push("/consumption");
+  }
+}, [status, pathname, router, session]);
+
+  // useEffect(() => {
+  //   const loadSections = async () => {
+  //     const sections = await navItemsDB();
+  //     // setAllSections(sections?.services || []);
+  //     setAllSections(sections?.data?.services || [])
+  //   };
+  //   loadSections();
+  // }, []);
 
   useEffect(() => {
-    const loadSections = async () => {
+  const loadSections = async () => {
+    try {
       const sections = await navItemsDB();
-      setAllSections(sections.services);
-    };
-    loadSections();
-  }, []);
+      setAllSections(sections?.services ?? []);
+    } catch (error) {
+      console.error("Failed to load nav items:", error);
+      setAllSections([]);
+    }
+  };
+
+  loadSections();
+}, []);
 
   const userMenu = allSections.filter(menu => menu.title === "Power Consumption(KWh/t)")
 
@@ -63,7 +84,7 @@ useEffect(()=>{
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
          {          
-         status === "authenticated" && session.user.type === "Admin" ?
+         status === "authenticated" && session?.user?.type === "Admin" ?
         <>
         { allSections?.map((item) => (
           <li key={item.path}>

@@ -66,6 +66,11 @@
   "title": "Power Consumption(KWh/t)",
   "path" : "/consumption",
   "section":"consumption"
+ },
+  {
+  "title": "DCS",
+  "path" : "/dcs",
+  "section":"dcs architecture"
  }
   ]
 }
