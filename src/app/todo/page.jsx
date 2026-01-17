@@ -5,6 +5,7 @@ import { getToDoDB } from "./getToDo";
 import { FaEye, FaRegEdit } from "react-icons/fa";
 import { RiDeleteBinLine } from "react-icons/ri";
 import Link from "next/link";
+import Todo from "./Todo";
 
 const page = () => {
   const [allToDo, setAllToDo] = useState([]);
@@ -44,7 +45,11 @@ const page = () => {
   return (
     <div>
       <div>
-        <div className="grid md:grid-cols-3 gap-10">
+         <div className="m-4 p-4">
+           <Todo></Todo>
+         </div>
+        <div className="grid md:grid-cols-3 gap-10 w-auto">
+        
           <div className="overflow-x-auto w-screen rounded-box border border-base-content/5 bg-base-100 m-3 p-3">
             <table className="table ">
               {/* head */}
