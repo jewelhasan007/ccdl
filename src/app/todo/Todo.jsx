@@ -31,7 +31,7 @@ const todo = () => {
         }
     ]
   return (
-    <div>
+    <div className="bg-gray-100 m-3 p-3 border rounded-2xl">
       <h1>ToDo List</h1>
       <div>
       {
