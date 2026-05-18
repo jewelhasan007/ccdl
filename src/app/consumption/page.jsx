@@ -32,50 +32,96 @@ const page = () => {
             </div>
 
              <div className='text-center underline font-semibold'>
-              <h1>CCDL Specific Power Consumption(KWh/t)</h1>
+              <h1 className='text-2xl mb-3'>CCDL Specific Power Consumption(KWh/t)</h1>
              </div>
            
-    
-
  {/* table */}
  <div className="overflow-x-auto ">
   <table className="table table-zebra text-[12px] ">
     {/* head */}
-    <thead className='text-[12px] border-b-2'>
-      <tr className='text-center text-black'>
-        <th >Date</th>
-        <th >Vertical Roller <br />Mill Consumption <br />(KW)</th>
-        <th >Grinding Circuit <br /> Consumption <br />(KW)</th>   
-         <th >Total Project <br /> Consumption <br />(KW)</th>   
-        <th >Total Production <br />(t)</th>
-        <th >Cement Type <br />(PCC/OPC)</th>
-        <th >Total Grinding Hour <br />(HH:MM)</th>
-        
-        <th className='bg-amber-200'>Mill Circuit <br />KWh/t</th>
-        <th className='bg-amber-200'>Grinding Feed-to-SILO<br />KWh/t</th>
-        <th className='bg-amber-200'>Total Project <br />KWh/t</th>
-      </tr>
-    </thead>
+<thead className='text-[12px] border-b-2'>
+  <tr className='text-center text-black'>
     
-    <tbody>
-      {/* row 1 */}
-     {allPower.map((power, index)=>(
-       <tr className='text-center border-b-1' key={index}>
-       <th>{power.date}</th>
-        <th className='text-gray-500'>{power.loesche}</th>
-        <th className='text-gray-500'>{power.grinding}</th>
-        <th className='text-gray-500'>{power.project}</th>
-        <th className='text-gray-500'>{power.production}</th>
-        <th className='text-gray-500'>{power.type}</th>
-        <th className='text-gray-500'>{power.time}</th>
-        <th className='bg-amber-200'>{(power.loesche / power.production).toFixed(2)}</th>
-        <th className='bg-amber-200'>{(power.grinding / power.production).toFixed(2)}</th>
-        <th className='bg-amber-200'>{(power.project / power.production).toFixed(2)}</th>
-    
-      </tr >
-     ))}
+    <th>Date</th>
 
-    </tbody>
+    <th className='bg-amber-200'>
+      Total Project <br /> KWh/t
+    </th>
+
+    <th className='bg-amber-200'>
+      Grinding Feed-to-SILO <br /> KWh/t
+    </th>
+
+    <th className='bg-amber-200'>
+      Mill Circuit <br /> KWh/t
+    </th>
+
+    <th>Total Production <br />(t)</th>
+
+    <th>Total Grinding Hour <br />(HH:MM)</th>
+
+    <th>Cement Type <br />(PCC/OPC)</th>
+
+    <th>Vertical Roller Mill <br /> Consumption <br />(KW)</th>
+
+    <th>Grinding Circuit <br /> Consumption <br />(KW)</th>
+
+    <th>Total Project <br /> Consumption <br />(KW)</th>
+
+  </tr>
+</thead>
+
+<tbody>
+  {[...allPower]
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .map((power, index) => (
+      <tr className='text-center border-b-1' key={index}>
+
+        <th>{new Date(power.date).toLocaleDateString('en-GB', {
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+}).replace(/\//g, '-')}</th>
+
+        <th className='bg-amber-200'>
+          {(power.project / power.production).toFixed(2)}
+        </th>
+
+        <th className='bg-amber-200'>
+          {(power.grinding / power.production).toFixed(2)}
+        </th>
+
+        <th className='bg-amber-200'>
+          {(power.loesche / power.production).toFixed(2)}
+        </th>
+
+        <th className='text-gray-500'>
+          {power.production}
+        </th>
+
+        <th className='text-gray-500'>
+          {power.time}
+        </th>
+
+        <th className='text-gray-500'>
+          {power.type}
+        </th>
+
+        <th className='text-gray-500'>
+          {power.loesche}
+        </th>
+
+        <th className='text-gray-500'>
+          {power.grinding}
+        </th>
+
+        <th className='text-gray-500'>
+          {power.project}
+        </th>
+
+      </tr>
+  ))}
+</tbody>
   </table>
   <div className='mt-5 text-gray-400'>
     <h2>Ref: </h2>
