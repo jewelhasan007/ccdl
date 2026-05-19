@@ -45,15 +45,15 @@ const page = () => {
     <th>Date</th>
 
     <th className='bg-amber-200'>
-      Total Plant <br /> (KWh/t)
+      Total Plant <br /> (Unit/Mt)
     </th>
 
     <th className='bg-amber-200'>
-      VRM Feeding-to-SILO <br /> (KWh/t)
+      VRM Feeding-to-SILO <br /> (Unit/Mt)
     </th>
 
     <th className='bg-amber-200'>
-      LOESCHE Mill Circuit <br /> (KWh/t)
+      LOESCHE Mill Circuit <br /> (Unit/Mt)
     </th>
 
     <th>Total Production <br />(t)</th>
@@ -62,11 +62,11 @@ const page = () => {
 
     <th>Cement Type <br />(PCC/OPC)</th>
 
-    <th>Vertical Roller Mill <br /> Consumption <br />(KW)</th>
+    <th>Vertical Roller Mill <br /> Consumption <br />(kW)</th>
 
-    <th>Grinding Circuit <br /> Consumption <br />(KW)</th>
+    <th>Grinding Circuit <br /> Consumption <br />(kW)</th>
 
-    <th>Total Project <br /> Consumption <br />(KW)</th>
+    <th>Total Project <br /> Consumption <br />(kW)</th>
 
   </tr>
 </thead>
