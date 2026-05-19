@@ -32,7 +32,7 @@ const page = () => {
             </div>
 
              <div className='text-center underline font-semibold'>
-              <h1 className='text-2xl mb-3'>CCDL Specific Power Consumption(KWh/t)</h1>
+              <h1 className='text-2xl mb-3'>CCDL Plant Power Consumption(KWh/t)</h1>
              </div>
            
  {/* table */}
@@ -45,15 +45,15 @@ const page = () => {
     <th>Date</th>
 
     <th className='bg-amber-200'>
-      Total Plant <br /> KWh/t
+      Total Plant <br /> (KWh/t)
     </th>
 
     <th className='bg-amber-200'>
-      VRM Feed-to-SILO <br /> KWh/t
+      VRM Feeding-to-SILO <br /> (KWh/t)
     </th>
 
     <th className='bg-amber-200'>
-      LOESCHE Mill Circuit <br /> KWh/t
+      LOESCHE Mill Circuit <br /> (KWh/t)
     </th>
 
     <th>Total Production <br />(t)</th>
