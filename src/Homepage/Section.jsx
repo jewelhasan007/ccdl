@@ -141,7 +141,7 @@ const handleDelete = async (id) =>{
   <div className="tab-content bg-base-100 border-base-300 p-6"><Today ></Today></div>
 
 
-  <input type="radio" name="my_tabs_6" className="tab" aria-label="AC lists2"  defaultChecked/>
+  <input type="radio" name="my_tabs_6" className="tab" aria-label="Total AC lists"  defaultChecked/>
   <div className="tab-content bg-base-100 border-base-300 p-6"><AcLists2></AcLists2></div>
 
 
