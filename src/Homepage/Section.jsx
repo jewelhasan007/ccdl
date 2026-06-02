@@ -15,6 +15,8 @@ import Priority from './Priority';
 import ChineseEngr from './ChineseEngr';
 import CommissioningSchedule from './CommissioningSchedule';
 import ChmcCosting from './ChmcCosting';
+import AcLists from './AcLists';
+import AcLists2 from './AcLists2';
 
 const Section =  () => {
 // const [allSections, setAllSections] = useState([])
@@ -137,6 +139,10 @@ const handleDelete = async (id) =>{
 
   <input type="radio" name="my_tabs_6" className="tab" aria-label="Today List"  defaultChecked/>
   <div className="tab-content bg-base-100 border-base-300 p-6"><Today ></Today></div>
+
+
+  <input type="radio" name="my_tabs_6" className="tab" aria-label="AC lists2"  defaultChecked/>
+  <div className="tab-content bg-base-100 border-base-300 p-6"><AcLists2></AcLists2></div>
 
 
 </div>
