@@ -17,6 +17,7 @@ import CommissioningSchedule from './CommissioningSchedule';
 import ChmcCosting from './ChmcCosting';
 import AcLists from './AcLists';
 import AcLists2 from './AcLists2';
+import TimeBasedHero from './TimeBasedHero';
 
 const Section =  () => {
 // const [allSections, setAllSections] = useState([])
@@ -143,6 +144,8 @@ const handleDelete = async (id) =>{
 
   <input type="radio" name="my_tabs_6" className="tab" aria-label="Total AC lists"  defaultChecked/>
   <div className="tab-content bg-base-100 border-base-300 p-6"><AcLists2></AcLists2></div>
+  <input type="radio" name="my_tabs_6" className="tab" aria-label="TimeBasedHero"  defaultChecked/>
+  <div className="tab-content bg-base-100 border-base-300 p-6"><TimeBasedHero></TimeBasedHero></div>
 
 
 </div>
